@@ -1,18 +1,13 @@
 /* =============================  General ============================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: #0B0B0B;
 }
-
-
 /* =============================  Header ============================= */
-
 .header {
     width: 100%;
     height: 90px;
@@ -24,49 +19,36 @@ body {
     z-index: 10000;
     border-bottom: 1px solid rgba(212, 175, 55, 0.45);
 }
-
-
 /* =============================  Logo ============================= */
-
 .logo {
     float: left;
     width: 230px;
 }
-
 .logo img {
     width: 210px;
     height: 60px;
 }
-
-
 /* =============================  Menu ============================= */
-
 .ul-list {
     list-style-type: none;
     float: left;
     margin-left: 35px;
     margin-top: 22px;
 }
-
 .ul-list > li {
     display: inline-block;
     margin-right: 25px;
 }
-
 .ul-list li a {
     color: #D4AF37;
     text-decoration: none;
     position: relative;
     display: inline-block;
 }
-
-
 /* =============================  Main Menu Hover ============================= */
-
 .ul-list li a:hover {
     color: #F0C75E;
 }
-
 .ul-list li a::after {
     content: "";
     position: absolute;
@@ -76,55 +58,46 @@ body {
     bottom: -8px;
     background-color: #D4AF37;
 }
-
 .ul-list li a:hover::after {
     width: 100%;
     height: 2px;
     transition: 0.5s;
 }
-
-
 /* =============================  Blog ============================= */
-
 .list-blog {
     position: relative;
+    padding-bottom: 10px;
 }
-
-
 /* Blog Dropdown */
-
 .ul-list-blog {
     display: none;
     list-style-type: none;
     position: absolute;
-    top: 25px;
-    left: -15px;
+    top: 100%;
+    left: 0;
     width: 170px;
     background-color: #151515;
     padding: 10px;
     z-index: 10;
     border: 1px solid rgba(212, 175, 55, 0.55);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
 }
-
-
 /* Blog Items */
-
 .ul-list-blog li {
     padding: 10px;
 }
-
 .ul-list-blog li a i {
     width: 25px;
     margin-right: 8px;
     color: #D4AF37;
 }
-
 .ul-list-blog li a {
     position: relative;
     color: #D4AF37;
     text-decoration: none;
 }
-
 .ul-list-blog li a::after {
     content: "";
     position: absolute;
@@ -134,27 +107,21 @@ body {
     bottom: -5px;
     background-color: #D4AF37;
 }
-
 .ul-list-blog li a:hover {
     color: #F0C75E;
 }
-
 .ul-list-blog li a:hover::after {
     width: 100%;
     height: 2px;
     transition: 0.5s;
 }
-
-
 /* Show Blog Menu */
-
 .list-blog:hover .ul-list-blog {
+    opacity: 1;
+    visibility: visible;
     display: block;
 }
-
-
 /* =============================  Search ============================= */
-
 .search-box {
     float: right;
     width: 220px;
@@ -166,18 +133,12 @@ body {
     border-radius: 40px;
     border: 1px solid #D4AF37;
 }
-
-
 /* Search Icon */
-
 .search-box i {
     color: #D4AF37;
     margin-right: 7px;
 }
-
-
 /* Search Input */
-
 .search {
     width: 155px;
     border: none;
@@ -186,14 +147,10 @@ body {
     font-size: 14px;
     color: #FFFFFF;
 }
-
 .search::placeholder {
     color: #BDBDBD;
 }
-
-
 /* =============================  Hero ============================= */
-
 .hero {
     width: 100%;
     height: 100vh;
@@ -202,18 +159,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 /* Hero Content */
-
 .hero-content {
     padding-top: 180px;
     padding-left: 90px;
 }
-
-
 /* Small Title */
-
 .small-title {
     color: #F0C75E;
     font-size: 20px;
@@ -221,34 +172,24 @@ body {
     font-style: italic;
     margin-bottom: 25px;
 }
-
-
 /* Main Title */
-
 .hero-content h1 {
     color: #D4AF37;
     font-size: 65px;
     line-height: 1.1;
     margin-bottom: 25px;
 }
-
-
 /* Hero Text */
-
 .hero-text {
     color: #F5F5F5;
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 35px;
 }
-
-
 /* =============================  Buttons ============================= */
-
 .buttons {
     margin-top: 30px;
 }
-
 .btn-one,
 .btn-two {
     display: inline-block;
@@ -258,15 +199,12 @@ body {
     margin-right: 20px;
     border-radius: 30px;
 }
-
-
 /* Explore Menu */
 .btn-one {
     background-color: #D4AF37;
     color: #0B0B0B;
     overflow: hidden;
 }
-
 .btn-one::after {
     content: "";
     position: absolute;
@@ -277,26 +215,20 @@ body {
     background-color: #A67C00;
     z-index: -1;
 }
-
 .btn-one:hover::after {
     width: 100%;
     transition: 0.5s;
 }
-
 .btn-one:hover {
     color: #FFFFFF;
 }
-
-
 /* Order Now */
-
 .btn-two {
     border: 2px solid #D4AF37;
     color: #FFFFFF;
     background-color: transparent;
     overflow: hidden;
 }
-
 .btn-two::after {
     content: "";
     position: absolute;
@@ -307,28 +239,23 @@ body {
     background-color: #D4AF37;
     z-index: -1;
 }
-
 .btn-two:hover::after {
     width: 100%;
     transition: 0.5s;
 }
-
 .btn-two:hover {
     color: #0B0B0B;
 }
-
 .btn-one i,
 .btn-two i {
     position: relative;
     z-index: 2;
 }
-
 .btn-one,
 .btn-two {
     position: relative;
     z-index: 1;
 }
-
 /* =============================  Welcome Section ============================= */
 .welcome-section {
     width: 100%;
@@ -353,9 +280,7 @@ body {
     background-color: #D6A84F;
     margin: 0 auto 45px auto;
 }
-/* =============================  Welcome Cards ============================= */
 /* =============================  Welcome Section ============================= */
-
 .welcome-section {
     width: 100%;
     height: 100vh;
@@ -366,31 +291,20 @@ body {
     padding-top: 100px;
     box-sizing: border-box;
 }
-
-
 /* Section Title */
-
 .welcome-section h2 {
     color: #FFFFFF;
     font-size: 35px;
     margin-bottom: 12px;
 }
-
-
 /* Title Line */
-
 .welcome-line {
     width: 70px;
     height: 3px;
     background-color: #D4AF37;
     margin: 0 auto 45px auto;
 }
-
-
-/* ============================= */
-/* Welcome Cards */
-/* ============================= */
-
+/* =============================  Welcome Cards  ============================= */
 .welcome-card {
     width: 27%;
     height: 300px;
@@ -404,47 +318,32 @@ body {
     text-align: center;
     overflow: hidden;
 }
-
-
 /* Card Icon */
-
 .welcome-card > i {
     font-size: 40px;
     color: #D4AF37;
     margin-bottom: 20px;
-
     position: relative;
     z-index: 2;
 }
-
-
 /* Card Title */
-
 .welcome-card h3 {
     color: #FFFFFF;
     font-size: 23px;
     margin-bottom: 15px;
-
     position: relative;
     z-index: 2;
 }
-
-
 /* Card Paragraph */
-
 .welcome-card p {
     color: #CFCFCF;
     font-size: 15px;
     line-height: 1.5;
     margin-bottom: 15px;
-
     position: relative;
     z-index: 2;
 }
-
-
 /* Read More */
-
 .welcome-card span {
     color: #F0C75E;
     text-decoration: none;
@@ -453,13 +352,9 @@ body {
     z-index: 2;
     cursor: pointer;
     font-weight: bold;
-
     text-transform: uppercase;
 }
-
-
 /* =============================  After ============================= */
-
 .welcome-card:after {
     content: "";
     position: absolute;
@@ -472,17 +367,12 @@ body {
     border-radius: 20px;
     z-index: 1;
 }
-
-
 /* After Hover */
-
 .welcome-card:hover:after {
     width: 100%;
     height: 100%;
     transition: 2s;
 }
-
-
 .welcome-card > i,
 .welcome-card > h3,
 .welcome-card > p,
@@ -490,9 +380,6 @@ body {
     position: relative;
     z-index: 2;
 }
-
-
-
 /* =============================  Featured Works Section ============================= */
 .works-section {
     width: 100%;
@@ -501,14 +388,12 @@ body {
     text-align: center;
     padding-top: 60px;
 }
-
 .works-title {
     color: #FFFFFF;
     font-size: 35px;
     margin-bottom: 12px;
     text-transform: capitalize;
 }
-
 .works-line {
     width: 70px;
     height: 3px;
@@ -516,32 +401,22 @@ body {
     margin: auto;
     margin-bottom: 35px;
 }
-
-
 /* Container */
-
 .works-container {
     width: 80%;
     margin: auto;
 }
-
-
 /* Work Item */
-
 .work-item {
     float: left;
     width: 30%;
     margin-bottom: 25px;
 }
-
 .work-item.middle {
     margin-left: 5%;
     margin-right: 5%;
 }
-
-
 /* Image */
-
 .work-img {
     width: 100%;
     height: 200px;
@@ -549,16 +424,12 @@ body {
     border-radius: 15px;
     overflow: hidden;
 }
-
 .work-img img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
 }
-
-
 /* Overlay */
-
 .work-overlay {
     position: absolute;
     top: 0;
@@ -570,34 +441,24 @@ body {
     opacity: 0;
     transition: 2s;
 }
-
-
 /* Hover */
-
 .work-item:hover .work-overlay {
     visibility: visible;
     opacity: 1;
 }
-
-
 /* Category */
-
 .work-overlay h3 {
     color: #D4AF37;
     font-size: 20px;
     margin-top: 55px;
     margin-bottom: 10px;
 }
-
 .work-overlay p {
     color: #F0C75E;
     font-size: 15px;
     margin-bottom: 15px;
 }
-
-
 /* Icons */
-
 .work-icons a {
     display: inline-block;
     width: 40px;
@@ -607,24 +468,17 @@ body {
     text-decoration: none;
     border-radius: 50%;
 }
-
 .work-icons a i {
     line-height: 40px;
     color: #0B0B0B;
     font-size: 18px;
 }
-
 .work-icons a i:hover {
     color: #D4AF37;
     background-color: #FFFFFF;
     border-radius: 50%;
 }
-
-
-/* ============================= */
-/* What We Offer */
-/* ============================= */
-
+/* ============================= What We Offer  ============================= */
 .offer-section {
     width: 100%;
     height: 100vh;
@@ -632,14 +486,12 @@ body {
     text-align: center;
     padding-top: 80px;
 }
-
 .offer-title {
     color: #FFFFFF;
     font-size: 35px;
     margin-bottom: 12px;
     text-transform: capitalize;
 }
-
 .offer-line {
     width: 70px;
     height: 3px;
@@ -647,18 +499,12 @@ body {
     margin: auto;
     margin-bottom: 45px;
 }
-
-
 /* Container */
-
 .offer-container {
     width: 80%;
     margin: auto;
 }
-
-
 /* Items */
-
 .offer-item {
     float: left;
     width: 30%;
@@ -672,15 +518,11 @@ body {
     position: relative;
     overflow: hidden;
 }
-
 .offer-item2 {
     margin-left: 5%;
     margin-right: 5%;
 }
-
-
 /* Icon */
-
 .offer-item > i {
     float: left;
     width: 15%;
@@ -690,10 +532,7 @@ body {
     position: relative;
     z-index: 2;
 }
-
-
 /* Information */
-
 .offer-info {
     float: left;
     width: 80%;
@@ -701,28 +540,19 @@ body {
     position: relative;
     z-index: 2;
 }
-
-
 /* Title */
-
 .offer-item h3 {
     color: #FFFFFF;
     font-size: 20px;
     margin-bottom: 10px;
 }
-
-
 /* Paragraph */
-
 .offer-item p {
     color: #CFCFCF;
     font-size: 14px;
     line-height: 1.4;
 }
-
-
 /* After */
-
 .offer-item::after {
     content: "";
     position: absolute;
@@ -735,16 +565,12 @@ body {
     opacity: 0.25;
     z-index: 1;
 }
-
-
 /* Hover After */
-
 .offer-item:hover::after {
     width: 100%;
     height: 100%;
     transition: 2s;
 }
-
 .offer-item::before {
     content: "";
     position: absolute;
@@ -757,57 +583,40 @@ body {
     opacity: 0.25;
     z-index: 1;
 }
-
 .offer-item:hover::before {
     width: 100%;
     height: 100%;
     transition: 2s;
 }
-
-/* ============================= */
-/* Why Choose Us */
-/* ============================= */
-
+/* ============================= Why Choose Us  ============================= */
 .choose-section {
     width: 100%;
     height: 100vh;
     background-color: #0B0B0B;
     padding-top: 90px;
 }
-
-
 /* Container */
-
 .choose-container {
     width: 80%;
     margin: auto;
 }
-
-
 /* Content */
-
 .choose-content {
     float: left;
     width: 55%;
     padding-top: 25px;
 }
-
-
 .choose-content h2 {
     color: #FFFFFF;
     font-size: 32px;
     margin-bottom: 12px;
 }
-
-
 .choose-line {
     width: 60px;
     height: 3px;
     background-color: #D4AF37;
     margin-bottom: 30px;
 }
-
-
 .choose-text {
     width: 80%;
     color: #CFCFCF;
@@ -815,41 +624,34 @@ body {
     line-height: 1.7;
     margin-bottom: 25px;
 }
-
 .choose-item {
     color: #CFCFCF;
     font-size: 14px;
     margin-bottom: 18px;
     transition: 0.5s;
 }
-
 .choose-item i {
     color: #D4AF37;
     margin-right: 8px;
 }
-
-
 /* Image */
-
 .choose-image {
     float: right;
     width: 30%;
     text-align: center;
 }
-
 .choose-image img {
-    width: 100%;
-    height: 420px;
+    width: 85%;
+    height: 400px;
     object-fit: cover;
+    margin-top: 50px;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
 }
-
-
 /* Dots */
-
 .choose-dots {
     margin-top: 10px;
 }
-
 .choose-dots span {
     display: inline-block;
     width: 10px;
@@ -858,325 +660,199 @@ body {
     background-color: #555555;
     margin: 0 3px;
 }
-
 .choose-dots span:first-child {
     background-color: #D4AF37;
 }
-
-
 .choose-item:hover {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 18px;
 }
-
 .choose-item:hover i {
     color: #F0C75E;
 }
-
 /* ============================= Achievements ============================= */
-
 .achievements-section {
     width: 100%;
     height: 300px;
-
     background-image: url("../images/Hero\ image.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
     position: relative;
 }
-
-
 /* Overlay */
-
 .achievements-section::after {
     content: "";
     position: absolute;
-
     width: 100%;
     height: 100%;
-
     top: 0;
     left: 0;
-
     background-color: rgba(0, 0, 0, 0.72);
 }
-
-
 /* Container */
-
 .achievement-container {
     width: 80%;
     margin: auto;
-
     position: relative;
     z-index: 2;
-
     padding-top: 90px;
 }
-
-
 /* Item */
-
 .achievement-item {
     float: left;
     width: 25%;
-
     text-align: center;
-
     color: #FFFFFF;
 }
-
-
 /* Icon */
-
 .achievement-item i {
     font-size: 30px;
     color: #D4AF37;
-
     margin-bottom: 12px;
-
     position: relative;
 }
-
-
 .achievement-item:hover i {
     top: -6px;
     transition: 0.5s;
-
     color: #F2D675;
 }
-
-
 /* Number */
-
 .achievement-item h3 {
     font-size: 22px;
-
     margin-bottom: 5px;
-
     color: #FFFFFF;
 }
-
-
 /* Text */
-
 .achievement-item p {
     font-size: 14px;
-
     color: #E6E6E6;
 }
-/* ============================= */
-/* Pricing Table */
-/* ============================= */
-
+/* ============================= Pricing Table  ============================= */
 .pricing-section {
     width: 100%;
     height: 650px;
-
     background-color: #0B0B0B;
-
     text-align: center;
-
     padding-top: 65px;
 }
-
-
 /* Title */
-
 .pricing-title {
     color: #FFFFFF;
     font-size: 35px;
-
     margin-bottom: 12px;
-
     text-transform: capitalize;
 }
-
-
 /* Line */
-
 .pricing-line {
     width: 70px;
     height: 3px;
-
     background-color: #D4AF37;
-
     margin: auto;
     margin-bottom: 45px;
 }
-
-
 /* Container */
-
 .pricing-container {
     width: 80%;
     margin: auto;
 }
-
-
 /* Price Card */
-
 .price-card {
     float: left;
-
     width: 30%;
     height: 350px;
-
     border: 1px solid #A67C00;
     border-radius: 10px;
-
     background-color: #151515;
-
     margin-bottom: 30px;
-
     position: relative;
-
     overflow: hidden;
-
     padding-top: 0;
 }
-
-
 /* Middle Card */
 .price-middle {
     margin-left: 5%;
     margin-right: 5%;
 }
-
 /* Before */
-
 .price-card::before {
     content: "";
-
     position: absolute;
-
     width: 100%;
     height: 0;
-
     top: 0;
     left: 0;
-
     background-color: #D4AF37;
-
     opacity: 0.25;
-
     border-radius: 10px;
-
     z-index: 1;
 }
 .price-middle::before {
     height: 100%;
 }
-
-
-
 /* Before Hover */
-
 .price-card:hover::before {
     height: 100%;
     transition: 2s;
 }
-
-
 /* Header */
-
 .price-head {
     width: 100%;
     height: 45px;
-
     background-color: transparent;
-
     padding-top: 15px;
-
     position: relative;
     z-index: 0;
 }
-
-
 .price-head h3 {
     color: #D4AF37;
     font-size: 13px;
 }
-
-
 /* Price Circle */
-
 .price-circle {
     width: 80px;
     height: 80px;
-
     border: 1px solid #D4AF37;
-
     border-radius: 50%;
-
     margin: 25px auto 20px auto;
-
     position: relative;
     z-index: 2;
-
     padding-top: 12px;
 }
-
 .price-circle h2 {
     color: #FFFFFF;
     font-size: 25px;
 }
-
-
 .price-circle p {
     color: #F0C75E;
     font-size: 10px;
 }
-
-
 /* Card Text */
-
 .price-card > p {
     color: #CFCFCF;
-
     font-size: 13px;
-
     margin-bottom: 12px;
-
     position: relative;
     z-index: 2;
 }
-
-
 /* Button */
-
 .price-card > a {
     display: inline-block;
-
     width: 110px;
     height: 30px;
-
     line-height: 30px;
-
     border: 1px solid #D4AF37;
-
     border-radius: 7px;
-
     background-color: #1C1C1C;
-
     color: #D4AF37;
-
     font-size: 11px;
-
     text-decoration: none;
-
     margin-top: 5px;
-
     position: relative;
     z-index: 2;
 }
-
-
 /* Button Hover */
-
 .price-card > a:hover {
     background-color: #D4AF37;
     color: #0B0B0B;
@@ -1185,7 +861,6 @@ body {
     background-color: #D4AF37;
     color: #0B0B0B;
 }
-
 /* ============================= */
 /* Testimonials */
 /* ============================= */
